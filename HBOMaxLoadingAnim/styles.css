@@ -1,0 +1,43 @@
+#loading {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:#000;
+    width: 200px;
+    height: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+@keyframes c1 {
+    0% {left: 0%; opacity: 30%;}
+    100% {left: 45%; opacity: 100%;}
+}
+@keyframes c2 {
+    0% {left: 45%; opacity: 100%;}
+    100% {left: 90%; opacity: 30%;}
+}
+@keyframes c3 {
+    0% {left: -100%; opacity: 30%;}
+    100% {left: 0%; opacity: 30%;}
+}
+
+#c1 {
+    animation: c1 0.5s infinite;
+}
+#c2 {
+    animation: c2 0.5s infinite
+}
+#c3 {
+    animation: c3 0.5s infinite
+}
